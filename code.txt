@@ -1,0 +1,41 @@
+/*Write a program to read the price and policy number of an article.
+if policy number = 1,discount = 10%
+   policy number = 2,discount = 20%
+   policy number = 3,discount = 30%
+any other policy number ,dicount = 0%
+*/
+
+#include<stdio.h>
+int main()
+{
+ 
+ float prn,dis;
+ int num;
+ printf("Enter price of Article = ");
+ scanf("%f",&prn);
+ printf("Discount policy number = ");
+ scanf("%d",&num);
+ if(num==1)
+ {
+  dis=prn-(10*prn/100);
+ }
+
+ else if(num==2)
+ {
+  dis=prn-(20*prn/100);
+ }
+
+ else if (num==3)
+ {
+  dis=prn-(30*prn/100);
+ }
+
+ else
+ {
+  dis=prn;
+ }
+
+ printf("Final amount of Article = %f",dis);
+    return 0;
+ 
+}
